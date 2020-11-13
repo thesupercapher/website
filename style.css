@@ -187,6 +187,13 @@ body::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
 }
 
+.album_title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    color: rgb(209, 209, 209);;
+}
+
 .cover {
     margin: 20px; 
     width: 250px;
@@ -200,6 +207,14 @@ body::-webkit-scrollbar-thumb:hover {
     line-height: 21px;
     letter-spacing: .5px;
     color: rgb(165, 165, 165);
+    margin-bottom: 50px;
+}
+
+.line {
+    border-top: 1px solid rgb(165, 165, 165);
+    margin-top: 50px;
+    width: 420px;
+    margin: auto;
 }
 
 @media screen and (max-width: 500px) {
@@ -216,6 +231,12 @@ body::-webkit-scrollbar-thumb:hover {
         line-height: 21px;
         letter-spacing: .5px;
         color: rgb(165, 165, 165);
+        margin-bottom: 35px;
+    }
+    
+    #download_button a {
+        padding: 1px 2px;
+        font-size: 12px;
     }
 }
 
@@ -246,6 +267,7 @@ body::-webkit-scrollbar-thumb:hover {
 .form_container {
     margin-top: 150px;
     margin-left: 200px;
+    justify-content: center;
 }
 
 .form_titles {
@@ -325,4 +347,32 @@ body::-webkit-scrollbar-thumb:hover {
         margin-top: 120px;
         margin-left: 100px;
     }
+}
+
+.hide {
+    display: none;
+}
+
+#download_button {
+    outline: unset;
+    border: unset;
+    background: rgb(79, 135, 161);
+    padding: 14px 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#download_button a {
+    background: unset;
+    color: rgb(17, 17, 17);
+}
+
+#download_button:hover {
+    background: rgb(52, 90, 107);
+    cursor: pointer;
+}
+
+#download_message {
+    display: none;
 }
